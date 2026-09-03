@@ -5,3 +5,17 @@
     --peach:#FEF7E5;
     --preto:#000000;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Space Grotesk;
+    background-color: var(--preto);
+    color: var(--peach);
+    line-height: 1.6;
+}
