@@ -27,6 +27,11 @@ body {
     width: 100%;
     padding: 25px 8%;
     background-color: var(--preto);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* Navbar */
@@ -35,6 +40,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
 }
 
 .lista-nav {
@@ -51,12 +60,18 @@ body {
 #logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 
-    color: var(--peach);
+    color: var(--verde);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#logo span {
+    color: var(--verde);
     font-weight: 700;
+
 }
 
 #logo img {
