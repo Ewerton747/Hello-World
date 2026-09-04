@@ -33,12 +33,16 @@ body {
 
 .navbar {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .lista-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+
     list-style: none;
 }
 
@@ -72,5 +76,247 @@ body {
 }
 
 .lista-nav li:not(:first-child) a:hover {
+    color: var(--verde);
+}
+
+/*HOME*/
+
+.home {
+    min-height: 90vh;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-texto {
+    max-width: 600px;
+}
+
+.home-texto p {
+    font-size: 18px;
+}
+
+.home-texto h1 {
+    color: var(--verde);
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.home-texto h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.home-texto h2:last-of-type {
+    color: var(--verde);
+}
+
+.foto-perfil {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*SOBRE MIM*/
+
+.sobre {
+    min-height: 80vh;
+    padding: 80px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    max-width: 800px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/*PROJETOS*/
+
+.projetos {
+    min-height: 80vh;
+    padding: 80px 8%;
+}
+
+.projetos > h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.projeto {
+    border: 2px solid var(--verde);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    max-width: 400px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.projeto h3 {
+    border-top: 2px solid var(--verde);
+    padding-top: 20px;
+
+    color: var(--verde);
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.projeto p {
+    margin: 10px 0 20px;
+}
+
+.projeto a {
+    display: inline-block;
+
+    border: 2px solid var(--verde);
+    padding: 8px 15px;
+
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.projeto a:hover {
+    background-color: var(--verde);
+    color: var(--preto);
+}
+
+/*HABILIDADES*/
+
+.habilidades {
+    min-height: 80vh;
+    padding: 80px 8%;
+}
+
+.habilidades > h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.habilidades > h2 {
+    grid-column: 1 / -1;
+}
+
+.habilidades article {
+    border: 2px solid var(--verde);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.habilidades article h3 {
+    color: var(--verde);
+    font-size: 24px;
+
+    border-bottom: 2px solid var(--verde);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.habilidades article ul {
+    list-style: none;
+}
+
+.habilidades article li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* CONTATOS */
+
+.contatos {
+    min-height: 70vh;
+    padding: 80px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contatos h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.contatos p {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contatos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+
+    border: 2px solid var(--verde);
+    padding: 20px;
+    width: fit-content;
+}
+
+.contatos li a {
+    display: inline-block;
+
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.contatos li a:hover {
+    background-color: var(--verde);
+    color: var(--preto);
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 40px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid var(--verde);
+}
+
+.rodape p {
+    font-size: 14px;
+}
+
+.rodape a {
+    color: var(--peach);
+    text-decoration: none;
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+.rodape a:hover {
     color: var(--verde);
 }
