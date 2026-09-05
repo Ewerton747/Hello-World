@@ -249,7 +249,7 @@ section { padding: 96px 8vw; position: relative; }
 }
 .projeto-card:hover {
   transform: translateY(-4px);
-  border-color: var(--green);
+  border-color: var(--verde);
 }
 .projeto-thumb {
   width: 100%;
@@ -263,7 +263,7 @@ section { padding: 96px 8vw; position: relative; }
 .projeto-tags {
   font-family: var(--mono);
   font-size: .78rem;
-  color: var(--green);
+  color: var(--verde);
   margin: 0;
 }
 .projeto-body h3 { margin: 0; font-size: 1.2rem; }
@@ -271,14 +271,14 @@ section { padding: 96px 8vw; position: relative; }
 
 .btn-outline {
   align-self: flex-start;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 1px solid var(--verde);
+  color: var(--verde);
   font-family: var(--mono);
   font-size: .85rem;
   padding: 8px 16px;
   transition: background .2s, color .2s;
 }
-.btn-outline:hover { background: var(--green); color: #06110a; }
+.btn-outline:hover { background: var(--verde); color: #06110a; }
 
 /* ---------- HABILIDADES ---------- */
 .habilidades-grid {
@@ -287,7 +287,7 @@ section { padding: 96px 8vw; position: relative; }
   gap: 16px;
 }
 .skill-box {
-  border: 1px solid var(--green-dim);
+  border: 1px solid var(--verdeEscuro);
   padding: 16px 18px;
 }
 .skill-box h4 {
@@ -314,7 +314,7 @@ section { padding: 96px 8vw; position: relative; }
 }
 .contatos-intro { color: var(--text-dim); max-width: 42ch; }
 .contatos-card {
-  border: 1px solid var(--green-dim);
+  border: 1px solid var(--verdeEscuro);
   padding: 28px 30px;
   display: flex;
   flex-direction: column;
@@ -335,16 +335,7 @@ section { padding: 96px 8vw; position: relative; }
   text-decoration-color: transparent;
   transition: color .2s, text-decoration-color .2s;
 }
-.contato-line:hover { color: var(--green); text-decoration-color: var(--green); }
-
-/* icon placeholders (simple squares/circles via mask-free approach) */
-.icon-github, .icon-linkedin, .icon-mail {
-  width: 16px; height: 16px;
-  display: inline-block;
-  border: 1.5px solid currentColor;
-  border-radius: 3px;
-}
-.icon-github { border-radius: 50%; }
+.contato-line:hover { color: var(--verde); text-decoration-color: var(--verde); }
 
 /* ---------- FOOTER ---------- */
 .site-footer {
