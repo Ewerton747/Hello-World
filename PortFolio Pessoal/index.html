@@ -1,237 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ewerton | Desenvolvedor Front-End</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ewerton | Desenvolvedor Front-End</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!--Cabeçalho do site-->
-    <header class="cabecalho">
-        <nav class="navbar">
+<header class="site-header">
+  <div class="logo">&lt;/&gt; Ewerton</div>
+  <nav class="nav-links">
+    <a href="#home" class="active">#Home</a>
+    <a href="#sobre">#Sobre Mim</a>
+    <a href="#projetos">#Projetos</a>
+    <a href="#habilidades">#Habilidades</a>
+    <a href="#contatos">#Contatos</a>
+  </nav>
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-         <a href="#home" id="logo">
-            <span>&lt;/&gt;</span>
-                Ewerton
+<aside class="side-social">
+  <a href="https://github.com/EwertonHenriquex" target="_blank" rel="noopener" aria-label="GitHub">
+    <svg viewBox="0 0 16 16" width="18" height="18"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+  </a>
+  <a href="https://linkedin.com/in/ewertonsilva" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <svg viewBox="0 0 16 16" width="18" height="18"><path fill="currentColor" d="M0 1.15C0 .51.53 0 1.19 0h13.62C15.47 0 16 .51 16 1.15v13.7c0 .64-.53 1.15-1.19 1.15H1.19C.53 16 0 15.49 0 14.85V1.15zM4.75 13.4V6.15H2.42v7.25h2.33zM3.58 5.15c.81 0 1.31-.54 1.31-1.21-.01-.69-.5-1.21-1.3-1.21s-1.31.52-1.31 1.21c0 .67.5 1.21 1.29 1.21h.01zM6.25 13.4h2.33V9.36c0-.22.02-.43.08-.59.18-.44.58-.9 1.27-.9.9 0 1.26.68 1.26 1.68v3.85h2.33V9.28c0-2.15-1.15-3.15-2.68-3.15-1.24 0-1.79.68-2.1 1.16h.02V6.15H6.25c.03.66 0 7.25 0 7.25z"/></svg>
+  </a>
+</aside>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Ewerton</h1>
+      <h2 class="hero-role">Desenvolvedor Front-End<br>UX/UI Design</h2>
+      <p class="hero-desc">
+        Transformo ideias em interfaces modernas, responsivas e funcionais,
+        unindo design, tecnologia e experiência do usuário.
+      </p>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-glow"></div>
+      <img src="img/foto.png" alt="Foto de Ewerton" onerror="this.style.display='none'">
+      <div class="hero-social">
+        <a href="https://github.com/EwertonHenriquex" target="_blank" rel="noopener">
+          <span class="icon-github"></span> EwertonHenriquex (Ewerton Henrique)
         </a>
-
-            <ul class="lista-nav">
-                <li><a href="#home">#Home</a></li>
-                <li><a href="#sobre">#Sobre Mim</a></li>
-                <li><a href="#projetos">#Projetos</a></li>
-                <li><a href="#habilidades">#Habilidades</a></li>
-                <li><a href="#contatos">#Contatos</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <aside class="redes-sociais">
-        <a href="#" aria-label="Github">
-            <img src="icon/githubGreen.svg" alt="">
+        <a href="https://linkedin.com/in/ewertonsilva" target="_blank" rel="noopener">
+          <span class="icon-linkedin"></span> Ewerton Silva | LinkedIn
         </a>
+      </div>
+    </div>
+  </section>
 
-        <a href="#" aria-label="LinkedIn">
-            <img src="icon/linkedinGreen.svg" alt="">
+  <!-- SOBRE MIM -->
+  <section id="sobre" class="sobre">
+    <h2 class="section-title">#Sobre Mim</h2>
+    <div class="sobre-content">
+      <div class="sobre-text">
+        <p>Olá, meu nome é Ewerton!</p>
+        <p>
+          Estou em formação como Desenvolvedor Front-End e busco expandir meus
+          conhecimentos para me tornar um Desenvolvedor Full Stack, aprofundando
+          minhas habilidades tanto no desenvolvimento de interfaces quanto na
+          construção de aplicações e serviços no back-end.
+        </p>
+        <p>
+          Tenho grande interesse por tecnologia, desenvolvimento de software e
+          soluções que gerem valor para pessoas e organizações.
+        </p>
+      </div>
+      <div class="dot-grid dot-grid-1" aria-hidden="true"></div>
+      <div class="dot-grid dot-grid-2" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="projetos">
+    <h2 class="section-title">#Projetos</h2>
+    <div class="projetos-grid">
+
+      <article class="projeto-card">
+        <img class="projeto-thumb" src="img/Lipe.png" alt="Logo do projeto LIPE">
+        <div class="projeto-body">
+          <p class="projeto-tags">Figma</p>
+          <h3>Projeto Integrador</h3>
+          <p class="projeto-desc">Projeto final da UC3, onde fizemos um aplicativo para ser o projeto final do PI.</p>
+          <a href="#" class="btn-outline">Acessar Projeto</a>
+        </div>
+      </article>
+
+      <article class="projeto-card">
+        <img class="projeto-thumb" src="img/logoTurma1.png" alt="Ilustração de desenvolvedor programando">
+        <div class="projeto-body">
+          <p class="projeto-tags">CSS &nbsp; JavaScript &nbsp; HTML</p>
+          <h3>Portfólio para a turma 130</h3>
+          <p class="projeto-desc">Projeto final da UC4, onde fizemos um site funcional e responsivo.</p>
+          <a href="https://github.com/EwertonHenriquex/portfolio_turma130_transforme-se_senac" target="_blank" class="btn-outline">Acessar Projeto</a>
+        </div>
+      </article>
+
+      <article class="projeto-card">
+        <img class="projeto-thumb" src="img/ZeroMei.png" alt="Logo do projeto integrador">
+        <div class="projeto-body">
+          <p class="projeto-tags">HTML &nbsp; CSS &nbsp; JavaScript &nbsp; Figma</p>
+          <h3>Projeto Integrador</h3>
+          <p class="projeto-desc">Projeto final desenvolvido utilizando HTML, CSS e JavaScript. Fiquei responsável pela parte de Back/Banco de dados.</p>
+          <a href="https://github.com/Matheus-marques2/Dados-PI-Transforme-se" target="_blank" class="btn-outline">Acessar Projeto</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="habilidades">
+    <h2 class="section-title">#Habilidades</h2>
+    <div class="habilidades-grid">
+      <div class="skill-box">
+        <h4>Linguagens</h4>
+        <p>TypeScript</p>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-box">
+        <h4>Banco de Dados</h4>
+        <p>SQLite</p>
+      </div>
+      <div class="skill-box">
+        <h4>Frameworks</h4>
+        <p>React</p>
+        <p>Express.js</p>
+      </div>
+      <div class="skill-box">
+        <h4>Other</h4>
+        <p>Git</p>
+        <p>GitHub</p>
+      </div>
+      <div class="skill-box">
+        <h4>Tools</h4>
+        <p>VSCode</p>
+      </div>
+      <div class="skill-box">
+        <h4>Stacks</h4>
+        <p>Html</p>
+        <p>Css</p>
+        <p>Figma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATOS -->
+  <section id="contatos" class="contatos">
+    <h2 class="section-title">#Contatos</h2>
+    <div class="contatos-content">
+      <p class="contatos-intro">
+        Interessado em oportunidades ou tem algum projeto em mente?<br>
+        Vamos conversar!
+      </p>
+      <div class="contatos-card">
+        <h3>Vamos Conversar !</h3>
+        <a href="mailto:Ewertonhenrique568@gmail.com" class="contato-line">
+          <span class="icon-mail"></span> Ewertonhenrique568@gmail.com
+          <img src="img/email.png" alt="Ícone de e-mail" class="contato-icon">
         </a>
-    </aside>
-
-    <main>
-
-        <!--Heade-->
-        <section id="home" class="home">
-
-            <div class="home-texto">
-                <p>Olá, eu sou</p>
-
-                <h1>Ewerton</h1>
-
-                <h2>Desenvolvedor Front-End</h2>
-                <h2>UX/UI Design</h2>
-
-                <p>
-                    Transformo ideias em experiências digitais
-                    funcionais, modernas e intuitivas.
-                </p>
-            </div>
-
-            <img class="foto-perfil" src="img/perfil.png" alt="my foto">
-
-        </section>
-
-        <!-- Seção sobre mim -->
-        <section id="sobre" class="sobre">
-
-            <h2>Sobre Mim</h2>
-
-            <p>Olá, eu sou o Ewerton!</p>
-
-            <p>
-                Estou em formação na área de desenvolvimento
-                Front-End e busco constantemente evoluir meus
-                conhecimentos em tecnologia.
-            </p>
-
-            <p>
-                Tenho interesse em desenvolvimento web,
-                experiência do usuário e criação de projetos
-                digitais.
-            </p>
-
-        </section>
-
-        <!--Seção de projetos-->
-       <section id="projetos" class="projetos">
-
-            <h2>#Projetos</h2>
-
-            <div class="lista-projetos">
-
-                <article class="projeto">
-                    <img src="img/lipe.png" alt="Projeto">
-                    <h3>Projeto onde vizemos em sala</h3>
-                    <p>Projeto desenvolvido durante o curso utilizando tecnologias Front-End.</p>
-                    <a href="#">Acessar projeto</a>
-                </article>
-
-                <article class="projeto">
-                    <img src="img/logoTurma1.png" alt="Portfólio da turma 130">
-                    <h3>Portfólio para a turma 130</h3>
-                    <p>Projeto desenvolvido para apresentar os trabalhos realizados pela turma.</p>
-                    <a href="#">Acessar projeto</a>
-                </article>
-
-                <article class="projeto">
-                    <img src="img/dozeroaoMEI.png" alt="PI DoZeroAoMEI final">
-                    <h3>Projeto Integrador</h3>
-                    <p>Projeto final desenvolvido utilizando HTML, CSS e JavaScript. Indo estava na parte do Back/Banco de dados</p>
-                    <a href="#" target="_blank">Acessar projeto</a>
-                </article>
-
-
-            </div>
-
-        </section>
-
-        <!--Seção de habilidades-->
-        <section id="habilidades" class="habilidades">
-
-            <h2>Habilidades</h2>
-
-            <article>
-                <h3>Linguagens</h3>
-
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Banco de Dados</h3>
-
-                <ul>
-                    <li>MySQL</li>
-                    <li>SQL</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Frameworks</h3>
-
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Express</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Other</h3>
-
-                <ul>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Tools</h3>
-
-                <ul>
-                    <li>VS Code</li>
-                    <li>Figma</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Skills</h3>
-
-                <ul>
-                    <li>UX/UI</li>
-                    <li>Design</li>
-                </ul>
-            </article>
-
-        </section>
-
-        <!--Seção de contatos-->
-        <section id="contatos" class="contatos">
-
-            <h2>Contatos</h2>
-
-            <p>
-                Interessado em oportunidades ou em algum projeto?
-                Entre em contato comigo.
-            </p>
-
-            <ul>
-                <li>
-                    <a href="https://google.com" target="_blank">
-                        ewertonhenrique568@gmail.com
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/ewerton-silva-271341313/" target="_blank">
-                        <img src="icon/linkedin.svg" alt="LinkedIn">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/EwertonHenriquex" target="_blank">
-                        <img src="icon/github.svg" alt="GitHub">
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-
-    </main>
-
-    <!--Rodapé-->
-    <footer class="rodape">
-
-        <p>© 2026 Ewerton</p>
-
-        <p>Desenvolvido por Ewerton.</p>
-
-        <p>Redes Sociais</p>
-
-        <a href="https://github.com/EwertonHenriquex " target="_blank">
-            <img src="icon/github.svg" alt="GitHub">
+        <a href="https://github.com/EwertonHenriquex" target="_blank" rel="noopener" class="contato-line">
+          <span class="icon-github"></span> EwertonHenriquex (Ewerton Henrique)
+          <img src="img/github.png" alt="Ícone do GitHub" class="contato-icon">
         </a>
-        
-        <a href="https://www.linkedin.com/in/ewerton-silva-271341313/" target="_blank">
-            <img src="icon/linkedin.svg" alt="LinkedIn">
+        <a href="https://linkedin.com/in/ewertonsilva" target="_blank" rel="noopener" class="contato-line">
+          <span class="icon-linkedin"></span> Ewerton Silva | LinkedIn
+          <img src="img/linkedin.png" alt="" class="contato-icon">
         </a>
+      </div>
+    </div>
+  </section>
 
-    </footer>
-    <script src="js/script.js"></script>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logo">
+    <p class="logo">&lt;/&gt; Ewerton</p>
+    <p class="footer-tag">Design web e Desenvolvedor Front-End</p>
+  </div>
+  <div class="footer-social">
+    <p>Redes Sociais</p>
+    <div class="footer-icons">
+      <a href="https://github.com/EwertonHenriquex" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"></span></a>
+      <a href="https://linkedin.com/in/ewertonsilva" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

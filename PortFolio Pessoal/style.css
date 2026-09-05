@@ -16,7 +16,6 @@
   --border: var(--verdeEscuro);
   --mono: "Space Grotesk", monospace;
   --sans: "Space Grotesk", sans-serif;
-  --maxw: 1200px;
 }
 
 * { box-sizing: border-box; }
@@ -47,7 +46,6 @@ section { padding: 96px 8vw; position: relative; }
   gap: 24px;
   margin: 0 0 48px 0;
 }
-.section-title::before { color: var(--green); content: ""; }
 .section-title::after {
   content: "";
   flex: 1;
@@ -56,15 +54,9 @@ section { padding: 96px 8vw; position: relative; }
   opacity: .5;
   max-width: 320px;
 }
-.section-title { }
-
-/* the "#" is part of the text itself, styled green via span-like trick */
-.section-title {
-  color: var(--text);
-}
 .section-title::first-letter { color: var(--green); }
 
-/* ---------- HEADER ---------- */
+/*HEADER*/
 .site-header {
   position: sticky;
   top: 0;
@@ -83,7 +75,6 @@ section { padding: 96px 8vw; position: relative; }
   font-size: 1.05rem;
   color: var(--text);
 }
-.site-header .logo::before { content: ""; }
 
 .nav-links {
   display: flex;
@@ -199,7 +190,6 @@ section { padding: 96px 8vw; position: relative; }
   transition: color .2s;
 }
 .hero-social a:hover { color: var(--green); }
-.hero-social a u,
 .hero-social a { text-decoration: underline; text-decoration-color: transparent; }
 .hero-social a:hover { text-decoration-color: var(--green); }
 
@@ -249,16 +239,12 @@ section { padding: 96px 8vw; position: relative; }
   border-color: var(--green);
 }
 .projeto-thumb {
+  width: 100%;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--mono);
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--green);
+  object-fit: contain;
   background: #0d110d;
   border-bottom: 1px solid var(--border);
+  padding: 24px;
 }
 .projeto-body { padding: 20px 22px 26px; display: flex; flex-direction: column; gap: 10px; }
 .projeto-tags {
@@ -385,7 +371,19 @@ section { padding: 96px 8vw; position: relative; }
 
 @media (max-width: 640px) {
   section { padding: 64px 6vw; }
-  .nav-links { display: none; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 8vw; }
   .menu-toggle { display: flex; }
   .habilidades-grid { grid-template-columns: 1fr 1fr; }
   .site-footer { flex-direction: column; text-align: center; }
