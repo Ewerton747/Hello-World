@@ -200,7 +200,7 @@ section { padding: 96px 8vw; position: relative; }
 
     top: 0;
     left: 0;
-
+    
     border: none;
 }
 
@@ -223,7 +223,7 @@ section { padding: 96px 8vw; position: relative; }
 
   height: auto;
   object-fit: contain;
-  background: linear-gradient(135deg, var(--verde) 0%, transparent 100%);
+  background: linear-gradient( var(--verde), var(--preto) 55%);
   border-radius: 50%;
   border: 2px solid var(--verde);
 }
