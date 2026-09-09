@@ -192,30 +192,22 @@ section { padding: 96px 8vw; position: relative; }
     overflow: hidden;
 }
 
-.gif-background iframe {
+.gif-background {
     position: absolute;
-
-    width: 100%;
+ 
+    width: 160%;
     height: 100%;
-
-    top: 0;
+ 
+    top: 25px;
     left: 0;
-    
-    border: none;
-}
-
-.hero-photo iframe {
-    position: absolute;
-
-    width: 480px;
-    height: 240px;
-
-    border: none;
-
+ 
     z-index: 0;
+ 
+    object-fit: cover;
+    opacity: 0.5;
 }
 
-.hero-photo img {
+.hero-photo .foto-perfil {
   position: relative;
   z-index: 1;
   width: 65%;
