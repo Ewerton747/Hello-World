@@ -427,6 +427,7 @@ section { padding: 96px 8vw; position: relative; }
     background: var(--bg);
     border-bottom: 1px solid var(--border);
   }
+  .nav-links { display: none; }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 14px 8vw; }
   .menu-toggle { display: flex; }
